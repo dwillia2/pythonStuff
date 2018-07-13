@@ -1,0 +1,8 @@
+notes on the game
+create a player class
+gamestate class
+game world class
+enemy class
+item class
+combat engine class
+game world engine class?
