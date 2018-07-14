@@ -24,3 +24,5 @@ for i in range(5):
 gameEngine = GameEngine()
 print("Attempting to start combat")
 gameEngine.runCombat(enemies)
+
+#More tests to come
