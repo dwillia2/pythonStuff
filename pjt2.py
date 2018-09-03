@@ -1,8 +1,9 @@
 def getbackwards(input_string):
-   output = ''
-   for x in range(0,len(input_string),-1):
-       output += input_string[x]
-   return output
+	output = ''   # user_input = fungus -> len(user_input) = 6
+	              # f->user_input[0] ... s -> user_input[5] ... {0,1,2,3,4,5} ... user_input[len(user_input)]
+	for x in range(len(input_string) - 1, -1, -1): # (0, len(input_string), -1) -> start->inclusive, stop->exclusive, step : range(0, len(user_input)) [0,1,2,3,4,5,6]
+		output += input_string[x]
+	print(output)
 
 def every_other(input_string):
 	output = ''
@@ -12,8 +13,23 @@ def every_other(input_string):
 			output += input_string[i] # appending characters, not addition
 	print(output)
 	
+#palimdrome -> string reads backwards the same as it does reading forwards. If not palimdrome, print they are a little, insignificant bitch
+def palimdrome():
+	# code here
+	# fungus
+	# 0 != user_input[0], user_input[0] == 'f'
+	# Step 1: GET string
+	# 
+	# if ('f' == user_input[0]):
+	#     code for if statement would run
+	#
+	# step 2: Computer needs to know values ofeach character, needs to know if those values are the same
+	# Step 3: 
+	# Step 4: 
+	# Big, significant betch (if it is a palimdrome)
+	
 user_input = input("Give me a word: ") # Will still need to change this a bit
-every_other(user_input) # Temporary call for testing
+print(getbackwards(user_input)) # Temporary call for testing
 
  
 # ============================== NOTES ============================================== 
