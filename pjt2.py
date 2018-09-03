@@ -3,9 +3,6 @@ def getbackwards(input_string):
    for x in range(0,len(input_string),-1):
        output += input_string[x]
    return output
-   
-user_input = input("Give me a word: ") # Will still need to change this a bit
-
 
 def every_other(input_string):
 	output = ''
@@ -14,6 +11,9 @@ def every_other(input_string):
 		if(i%2) == 0: # Do nothing when i%2 != 0
 			output += input_string[i] # appending characters, not addition
 	print(output)
+	
+user_input = input("Give me a word: ") # Will still need to change this a bit
+every_other(user_input) # Temporary call for testing
 
  
 # ============================== NOTES ============================================== 
